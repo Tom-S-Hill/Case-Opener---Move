@@ -32,11 +32,12 @@ The goal is to simulate opening a case on-chain using **Sui’s secure randomnes
 - Mints and transfers a new Skin object to the caller
 
 ## Rarity Distribution
-Rarity	Chance	Example Item
-Common	75%	"Common USP-S"
-Rare	15%	"Rare AK-47"
-Epic	9%	"Epic AWP"
-Legendary	1%	"Legendary Knife"
+| Rarity	| Chance	| Example Item |
+| ------ | --- | ------------ |
+| Common	| 75%	| "Common USP-S" |
+| Rare | 15%	| "Rare AK-47" |
+| Epic	| 9%	| "Epic AWP" |
+| Legendary	| 1%	| "Legendary Knife" |
 
 ### About
 
