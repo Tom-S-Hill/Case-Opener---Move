@@ -145,7 +145,7 @@ export default function App() {
             Refresh Inventory
           </button>
           <button
-            className="bg-green-600 px-4 py-2 rounded disabled:opacity-50"
+            className="bg-yellow-500 px-4 py-2 rounded disabled:opacity-50"
             disabled={!selectedCaseId}
             onClick={openSelectedCase}
           >
@@ -178,7 +178,7 @@ export default function App() {
                     isSelected ? "ring-2 ring-yellow-400" : ""
                   }`}
                 >
-                  <div className="h-32 mb-2 rounded bg-slate-700 flex items-center justify-center overflow-hidden">
+                  <div className="h-44 mb-2 rounded bg-slate-700 flex items-center justify-center overflow-hidden">
                     <img
                       src={CASE_IMAGE}
                       alt="Case"

@@ -7,9 +7,9 @@ The goal is to simulate opening a case on-chain using **Sui’s secure randomnes
 
 ## Features
 
-- Uses Sui’s built-in `Random` module for fair, on-chain randomness  
-- Simple rarity tiers: Common, Rare, Epic, Legendary  
-- Transferable objects — each reward is owned by the caller  
+- Uses Sui’s built-in `Random` module for fair, on-chain randomness
+- Simple rarity tiers: Common, Rare, Epic, Legendary
+- Transferable objects — each reward is owned by the caller
 - Designed to learn how Move handles ownership and secure randomness
 
 ---
@@ -17,27 +17,39 @@ The goal is to simulate opening a case on-chain using **Sui’s secure randomnes
 ## How It Works
 
 1. **Create a case**
+
    ```move
    create_case(ctx)
    ```
-   Mints a new Case object for the caller.
+
+- Mints a new Case object for the caller.
 
 2. **Open a case**
 
-  ```move
-  open_case(case, rnd, ctx)
-  ```
+```move
+open_case(case, rnd, ctx)
+```
+
 - Consumes the Case object
 - Generates a random rarity and name
 - Mints and transfers a new Skin object to the caller
 
+3. **Delete an item**
+
+```move
+delete_skin(skin, _ctx)
+```
+
+- Deletes skin
+
 ## Rarity Distribution
-| Rarity	| Chance	| Example Item |
-| ------ | --- | ------------ |
-| Common	| 75%	| "Common Dagger" |
-| Rare | 15%	| "Rare Potion" |
-| Epic	| 9%	| "Epic Sword" |
-| Legendary	| 1%	| "Legendary Amulet" |
+
+| Rarity    | Chance | Example Item       |
+| --------- | ------ | ------------------ |
+| Common    | 75%    | "Common Dagger"    |
+| Rare      | 15%    | "Rare Potion"      |
+| Epic      | 9%     | "Epic Sword"       |
+| Legendary | 1%     | "Legendary Amulet" |
 
 ### About
 
@@ -47,3 +59,7 @@ It helped me understand object ownership, randomness, and secure contract design
 #### Author
 
 Thomas Hill
+
+```
+
+```
