@@ -34,10 +34,10 @@ The goal is to simulate opening a case on-chain using **Sui’s secure randomnes
 ## Rarity Distribution
 | Rarity	| Chance	| Example Item |
 | ------ | --- | ------------ |
-| Common	| 75%	| "Common USP-S" |
-| Rare | 15%	| "Rare AK-47" |
-| Epic	| 9%	| "Epic AWP" |
-| Legendary	| 1%	| "Legendary Knife" |
+| Common	| 75%	| "Common Dagger" |
+| Rare | 15%	| "Rare Potion" |
+| Epic	| 9%	| "Epic Sword" |
+| Legendary	| 1%	| "Legendary Amulet" |
 
 ### About
 
