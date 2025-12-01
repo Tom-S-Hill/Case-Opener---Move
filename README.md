@@ -63,3 +63,8 @@ Thomas Hill
 ```
 
 ```
+
+todo:
+
+- add balance fpr ease of opening for users (makes minting and opening less tedious)
+- add separate screen for case opening. maybe cycle between the 4 different items at a certain speed that slows down. last item is shown correctly using sui::Random
